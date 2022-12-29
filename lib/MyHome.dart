@@ -29,7 +29,7 @@ class _MyHomeState extends State<MyHome> {
     List<AsteroidModel> data = [
       AsteroidModel(const Size(70, 70), const Alignment(3.9, 0.7)),
       AsteroidModel(const Size(100, 100), const Alignment(1.8, -0.5)),
-      AsteroidModel(const Size(40, 40), const Alignment(3, -0.3)),
+      AsteroidModel(const Size(40, 40), const Alignment(2.9, -0.3)),
       AsteroidModel(const Size(60, 60), const Alignment(2.3, 0.5)),
     ];
     return data;
@@ -214,7 +214,7 @@ class _MyHomeState extends State<MyHome> {
                   width: 70,
                   decoration: const BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage("assets/ship2.jpg"))),
+                          image: AssetImage("assets/spaceship.png"), fit: BoxFit.cover)),
                 ),
               ),
               Align(
@@ -227,7 +227,7 @@ class _MyHomeState extends State<MyHome> {
                     image: DecorationImage(
                         image: AssetImage(
                       asteroidData[0].path,
-                    )),
+                    ),fit: BoxFit.fill),
                   ),
                 ),
               ),
@@ -241,7 +241,7 @@ class _MyHomeState extends State<MyHome> {
                     image: DecorationImage(
                         image: AssetImage(
                       asteroidData[1].path,
-                    )),
+                    ),fit: BoxFit.fill),
                   ),
                 ),
               ),
@@ -255,7 +255,7 @@ class _MyHomeState extends State<MyHome> {
                     image: DecorationImage(
                         image: AssetImage(
                       asteroidData[2].path,
-                    )),
+                    ),fit: BoxFit.fill),
                   ),
                 ),
               ),
@@ -269,7 +269,7 @@ class _MyHomeState extends State<MyHome> {
                     image: DecorationImage(
                         image: AssetImage(
                       asteroidData[3].path,
-                    )),
+                    ),fit: BoxFit.fill),
                   ),
                 ),
               ),
