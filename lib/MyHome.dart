@@ -48,7 +48,7 @@ class _MyHomeState extends State<MyHome> {
       time = time + 0.02;
       setState(
         () {
-          maxHeight = velocity * time + gravity * time * time;
+          maxHeight = velocity * time + gravity * time * time ;
           shipY = initialPosition - maxHeight;
           if (isShipColided()) {
             timer.cancel();
